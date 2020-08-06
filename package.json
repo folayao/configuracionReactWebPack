@@ -1,0 +1,41 @@
+{
+  "name": "configuracionreactwebpack",
+  "version": "1.0.0",
+  "description": "configuracion basica para el uso de react con webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode build",
+    "start": "webpack-dev-server --open --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/folayao/configuracionReactWebPack.git"
+  },
+  "keywords": [
+    "REACT",
+    "WebPack"
+  ],
+  "author": "Felipe Olaya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/folayao/configuracionReactWebPack/issues"
+  },
+  "homepage": "https://github.com/folayao/configuracionReactWebPack#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

@@ -1,0 +1,90 @@
+@import "../Vars.scss";
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@1,500&family=MuseoModerno:wght@300&display=swap");
+.header {
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: $colorNegro;
+    font-family:$fontMonospace;
+    color: $letrasFondoOsc;
+    flex-direction: column;
+    align-items: center;
+    .gits{
+        text-decoration: none;
+        margin-left: 10%;
+        grid-column: 1;
+        font-family: $fontSansSerif;
+        font-size: 19px;
+        align-self: center;
+        color: $colorPiel ;
+    }
+    .gits:hover{
+        text-decoration: underline;
+        font-size: 21px;
+    }
+    .tituloFelipe{
+        display: flex;
+        text-decoration: none;
+        grid-column:3/6;
+        text-align: center;
+    }
+
+    .felipe {
+        grid-column: 3/6;
+        text-align: center;
+        color: blanchedalmond;
+        text-decoration: none;
+    }
+    .redes {
+        grid-column: 6/8;
+        text-align: center;
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            background-color: $colorNegro;
+            gap: 7px;
+            .git {
+                grid-column: 1;
+                width: 45px;
+                height: 45px;
+            }
+            .git:hover {
+                grid-column: 1;
+                width: 50px;
+                height: 50px;
+            }
+            .insta {
+                grid-column: 2;
+                width: 45px;
+                height: 45px;
+            }
+            .insta:hover {
+                grid-column: 2;
+                width: 50px;
+                height: 50px;
+            }
+            .twitter {
+                grid-column: 3;
+                width: 50px;
+                height: 50px;
+            }
+            .linkedin {
+                grid-column: 4;
+                margin-left: 5px;
+                width: 45px;
+                height: 45px;
+            }
+            .twitter:hover {
+                grid-column: 3;
+                width: 55px;
+                height: 55px;
+            }
+            .linkedin:hover {
+                grid-column: 4;
+                width: 55px;
+                height: 55px;
+            }
+        }
+    }
+}
